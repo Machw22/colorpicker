@@ -11,7 +11,7 @@ function EnterColor() {
    
     
 
-   
+ 
 
 
     var rgbValue = "";
