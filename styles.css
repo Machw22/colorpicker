@@ -5,3 +5,8 @@
     max-height: 200px;
 
 }
+
+    nav {
+        position: fixed;
+        padding-top: 30px;
+}
