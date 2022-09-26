@@ -8,13 +8,13 @@ function EnterColor() {
 
     var cTotal = 0.0;
     
-   var lum = Math.max(red, green, blue)
+   var lum = Math.max(red, green, blue);
 
 
 
     var rgbValue = "";
    
-
+    
 red = Number(prompt("Please enter the R value between 0.0 and 1.0"))
 green = Number(prompt("Please enter the G value between 0.0 and 1.0."))
 blue = Number(prompt("Please enter the B value between 0.0 and 1.0."))
@@ -55,11 +55,12 @@ document.write(convertValue);
  //Display actual color
  console.log(cTotal)
  var vBoxColor= "rgb(" + rgbR + "," + rgbG + "," + rgbB + ")";
- 
+
+ var convertValue = ("The converted value (in barycentric maxwell) is (" + cRTotal.toFixed(2) + ", " + cGTotal.toFixed(2) + ", " + cBTotal.toFixed(2) + " , " + lum + "). ");
  document.getElementById("vBoxColor").style.background = vBoxColor 
 
 
-
+ console.log(lum);
 } 
 
 
