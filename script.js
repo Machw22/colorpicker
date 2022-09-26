@@ -28,6 +28,16 @@ blue = Number(prompt("Please enter the B value between 0.0 and 1.0."))
         prompt("Reminder, please enter a proper RGB value.")
     }
 */
+
+
+    if (red + green + blue === 0) {
+        lum = 0
+    } else {
+        lum = 1
+    }
+
+
+
  cTotal = (Number(red) + Number(green) + Number(blue))
 
   var cRTotal = (1/ cTotal * red)
