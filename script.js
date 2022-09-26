@@ -8,10 +8,8 @@ function EnterColor() {
 
     var cTotal = 0.0;
     
-   
-    
+   var lum = Math.max(red, green, blue)
 
- 
 
 
     var rgbValue = "";
@@ -39,7 +37,7 @@ blue = Number(prompt("Please enter the B value between 0.0 and 1.0."))
   var cBTotal = (1/ cTotal * blue)
     
 
- var convertValue = ("The converted value (in barycentric maxwell) is (" + cRTotal.toFixed(2) + ", " + cGTotal.toFixed(2) + ", " + cBTotal.toFixed(2) + "). ");
+ var convertValue = ("The converted value (in barycentric maxwell) is (" + cRTotal.toFixed(2) + ", " + cGTotal.toFixed(2) + ", " + cBTotal.toFixed(2) + " , " + lum + "). ");
 
 document.write(convertValue);
 //document.getElementById("vBoxColor").innerHTML = convertValue;
